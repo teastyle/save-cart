@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+}
+h1, h2, h3, h4{
+    line-height: 1;
+}
+body{
+    margin: 0 !important;
+    background-color: #f1f5f8;
+}
+.root{
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.25rem;
+    --large-screen-width: 1170px;
+    --small-screen-width: 90vw;
+    --fixed-width: 50rem;
+}
+nav{
+    width: 100%;
+    background: #2680c0;
+}
+.head{
+     max-width: 100%;
+     padding: 7px 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+.head h3{
+    color: #fff;
+    font-size: 2rem;
+    margin: 15px 0;
+}
+.nav-container{
+    display: block;
+    position: relative;
+}
+.head svg{
+    width: 2rem;
+    fill: #fff; 
+}
+.amount-container{
+    position: absolute;
+    top: -0.85rem;
+    right: -0.85rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background-color: #85c6f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.total-amount{
+    color: #fff;
+    font-size: 1.25rem;
+}
+.cart{
+    min-height: calc(100vh - 120px);
+    width: 90vw;
+    margin: 40px auto 0;
+    padding: 2.5rem 0;
+    
+}
+.cart h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+.cart-item{
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    grid-column-gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+.cart-item img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+}
+.cart-item h4 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    margin-top: 8px;
+}
+.item-price {
+    color: #617d98;
+}
+.amount-btn {
+    width: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.amount {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 1.25rem;
+    line-height: 1;
+    margin-top: 0;
+}
+.amount-btn svg {
+    fill: #2680c0;
+}
+.remove-btn {
+    color: #2680c0;
+    letter-spacing: .25rem;
+    cursor: pointer;
+    font-size: .85rem;
+    background: transparent;
+    border: none;
+    margin-top: 0.375rem;
+    transition: all .3s linear;
+}
+hr{
+    background: #617d98;
+    border-color: transparent;
+    border-width: 0.25px;
+}
+.footer{
+    margin-top: 4rem;
+    text-align: center;
+}
+.cart-total h4 {
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.clear-btn{
+    background: transparent;
+    padding: 0.5rem 1rem;
+    border: 1px solid #bb2525; 
+    margin-top: 2.25rem;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    color: #bb2525;
+    font-weight: 700;
+    letter-spacing: .25rem;
+
+}
+.clear-btn:hover{
+    color: #bb2525;
+    background-color: #e66b6b;
+}
